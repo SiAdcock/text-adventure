@@ -1,14 +1,14 @@
-Text adventure
+# Text adventure
 
-# Install
+## Install
 
 ```sh
 $ yarn
 ```
 
-# Instructions
+## Instructions
 
-Start the game
+**Start the game**
 
 ```sh
 $ yarn dev
@@ -16,7 +16,7 @@ $ yarn dev
 
 Browse to [http://localhost:1234]( http://localhost:1234)
 
-Move the player
+**Move the player**
 
 ```sh
 W: Go north
