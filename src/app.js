@@ -1,12 +1,17 @@
-
-const NORTH = 'North'
-const SOUTH = 'South'
-const EAST = 'East'
-const WEST = 'West'
+const DIRECTION = {
+    NORTH: 'North',
+    SOUTH: 'South',
+    EAST: 'East',
+    WEST: 'West',
+}
+const CODE = {
+    NORTH: 'KeyW',
+    SOUTH: 'KeyS',
+    EAST: 'KeyD',
+    WEST: 'KeyA',
+}
 
 const go = (direction) => {
-    console.log(`Going ${direction}`)
-
     const consoleEl = document.getElementById('console')
     const consoleOutputEl = document.createElement('p')
 
@@ -18,13 +23,13 @@ const go = (direction) => {
 
 document.addEventListener('keydown', (event) => {
     switch (event.code) {
-        case 'KeyW': go(NORTH)
+        case CODE.NORTH: go(DIRECTION.NORTH)
         break;
-        case 'KeyS': go(SOUTH)
+        case CODE.SOUTH: go(DIRECTION.SOUTH)
         break;
-        case 'KeyD': go(EAST)
+        case CODE.EAST: go(DIRECTION.EAST)
         break;
-        case 'KeyA': go(WEST)
+        case CODE.WEST: go(DIRECTION.WEST)
         break;
     }
 })
