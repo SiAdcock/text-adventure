@@ -1,0 +1,14 @@
+name: Validate the build
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
