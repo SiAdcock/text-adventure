@@ -9,7 +9,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build"
+    "clean": "rm -rf dist",
+    "build": "parcel build --public-url ./"
   },
   "devDependencies": {
     "parcel": "^2.0.0"
