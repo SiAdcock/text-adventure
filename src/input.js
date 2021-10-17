@@ -1,11 +1,13 @@
 import {getPosition, move} from './player'
 import { DIRECTION } from './direction'
+import { openDebugger } from './debug'
 
 const CODE = {
     NORTH: 'KeyW',
     SOUTH: 'KeyS',
     EAST: 'KeyD',
     WEST: 'KeyA',
+    DEBUG: 'KeyB'
 }
 
 const go = (direction) => {
@@ -30,6 +32,8 @@ export const addEventListeners = () => {
             case CODE.EAST: go(DIRECTION.EAST)
             break;
             case CODE.WEST: go(DIRECTION.WEST)
+            break;
+            case CODE.DEBUG: openDebugger()
             break;
         }
     })
