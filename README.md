@@ -14,7 +14,7 @@ $ yarn
 $ yarn dev
 ```
 
-Browse to [http://localhost:1234]( http://localhost:1234)
+Browse to [http://localhost:1234](http://localhost:1234)
 
 **Move the player**
 

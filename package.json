@@ -10,9 +10,11 @@
   "scripts": {
     "dev": "parcel",
     "clean": "rm -rf dist",
-    "build": "parcel build --public-url ./"
+    "build": "parcel build --public-url ./",
+    "lint": "prettier --check ."
   },
   "devDependencies": {
-    "parcel": "^2.0.0"
+    "parcel": "^2.0.0",
+    "prettier": "2.4.1"
   }
 }
