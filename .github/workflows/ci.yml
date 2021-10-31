@@ -1,4 +1,4 @@
-name: Validate the build
+name: Continuous integration
 
 on: push
 
