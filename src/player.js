@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import { DIRECTION } from "./direction";
 import { MAP_SIZE } from "./map";
+=======
+import { DIRECTION } from "./direction"
+import { MAP_SIZE } from "./map"
+>>>>>>> add map boundary detection
 
 const position = [0, 0];
 
@@ -16,23 +21,41 @@ export const isNotOutOfBounds = (pos, direction) => {
   }
 };
 
+const isValidPosition = (newPosition) => {
+  return (
+    newPosition[0] >= 0 &&
+    newPosition[0] < MAP_SIZE.X &&
+    newPosition[1] >= 0 &&
+    newPosition[1] < MAP_SIZE.Y
+  )
+}
+
 export const move = (direction) => {
+  let newPosition = [position[0], position[1]]
   switch (direction) {
     case DIRECTION.NORTH:
-      position[1] = position[1] + 1;
-      break;
+      newPosition[1] = position[1] + 1
+      break
     case DIRECTION.SOUTH:
-      position[1] = position[1] - 1;
-      break;
+      newPosition[1] = position[1] - 1
+      break
     case DIRECTION.EAST:
-      position[0] = position[0] + 1;
-      break;
+      newPosition[0] = position[0] + 1
+      break
     case DIRECTION.WEST:
-      position[0] = position[0] - 1;
-      break;
+      newPosition[0] = position[0] - 1
+      break
   }
-};
+
+  if (isValidPosition(newPosition)) {
+    position[0] = newPosition[0]
+    position[1] = newPosition[1]
+    return true
+  }
+
+  return false
+}
 
 export const getPosition = () => {
-  return position;
-};
+  return position
+}
