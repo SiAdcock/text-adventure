@@ -1,0 +1,2 @@
+:root{--font-size-root:16px;--font-size-console:1.125rem;--line-height-tight:1.3;--space-console-paragraph:1em}body{font-family:Courier New,Courier,monospace}.console{border:1px solid #000;font-size:var(--font-size-console);height:calc(var(--font-size-console)*var(--line-height-tight)*6 + var(--space-console-paragraph)*6);line-height:var(--line-height-tight);overflow-y:auto;width:100%}.console>p{margin-block-end:var(--space-console-paragraph);margin-block-start:var(--space-console-paragraph)}
+/*# sourceMappingURL=index.66d291fe.css.map */
