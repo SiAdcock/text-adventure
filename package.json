@@ -11,7 +11,8 @@
     "dev": "parcel",
     "clean": "rm -rf dist",
     "build": "parcel build --public-url ./",
-    "lint": "prettier --check ."
+    "lint": "prettier --check .",
+    "validate": "yarn lint"
   },
   "devDependencies": {
     "parcel": "^2.0.0",
