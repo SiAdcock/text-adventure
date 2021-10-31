@@ -1,3 +1,3 @@
-import { addEventListeners } from "./io";
+import { addEventListeners } from "./input";
 
 addEventListeners();
